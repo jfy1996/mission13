@@ -1,0 +1,202 @@
+@charset "utf-8";
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font: 62.5% Hiragino Sans GB W3, serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin w-h($w,$h) {
+  width: $w;
+  height: $h;
+}
+
+header {
+  position: fixed;
+  @include w-h(100%, 4.4rem);
+  display: flex;
+  align-items: center;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  background-color: #29BDE0;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+}
+
+.btn-1 {
+  @include w-h(2.6rem, 2.1rem);
+  background: url("img.png") no-repeat -16.1rem 0;
+  background-size: 36.3rem 10.3rem;
+  margin-left: 1rem;
+}
+.link-home {
+  @include w-h(2.6rem, 2.1rem);
+  display: inline-block;
+}
+/*左上角主页按钮图标*/
+
+.word-title {
+  font-size: 1.7rem;
+  color: #FFFFFF;
+  line-height: 4.4rem;
+  margin: auto;
+}
+
+/*标题文字*/
+
+.btn-2 {
+  @include w-h(2rem, 2rem);
+  margin-right: 1.2rem;
+  background: url("img.png") no-repeat -9.5rem 0;
+  background-size: 36.3rem 10.3rem;
+}
+
+/*右上角帮助图标按钮*/
+
+main {
+  margin-bottom: 9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  background-color: #29BDE0;
+  margin-top: 4.4rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 4rem;
+}
+
+.main-box {
+  margin-top: 4.4rem;
+  margin-bottom: 7rem;
+}
+
+.victory {
+  @include w-h(17.6rem, 10.3rem);
+  background: url("img.png") no-repeat -18.7rem 0;
+  background-size: 36.3rem 10.3rem;
+  margin: 0 auto 1.2rem;
+}
+
+.content-1 {
+  font: 1.7rem HiraginoSansGB-W6, Serif;
+  color: #FFC865;
+  margin-bottom: 3.1rem;
+  padding: 0;
+  font-weight: bold;
+  white-space: normal;
+  overflow: hidden;
+}
+
+/*段落黄色字体文字*/
+
+.content-2 {
+  font-size: 1.3rem;
+  color: #FFFFFFFF;
+  margin-bottom: .4rem;
+}
+
+/*段落白体文字格式*/
+
+.box-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.2rem;
+}
+
+.box-2 {
+  margin-right: 1rem;
+  overflow: hidden;
+}
+
+footer {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  @include w-h(100%, 6.5rem);
+  background-color: rgba(41, 189, 224, 0.48);
+  left: 0;
+  bottom: 0;
+  right: 0;
+  justify-content: space-between;
+  padding: 1.2rem 1.3rem 1rem 1.2rem;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.btn-3, .btn-4 {
+  @include w-h(13.6rem, 4.3rem);
+  color: #FFFFFF;
+  border-radius: .5rem;
+  font-size: 2rem;
+}
+
+.btn-3 {
+  background-color: #F66F6F;
+}
+
+.btn-4 {
+  background-color: #FBB435;
+
+}
+
+.days {
+  padding: 0 5.2rem 1rem 3.8rem;
+  border-bottom: 1px solid rgba(83, 83, 83, 0.2);
+}
+
+.word-day2 {
+  margin-bottom: .6rem;
+}
+
+.box-date {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  margin-top: 0.7rem;
+}
+
+/*第1天和用时*/
+
+.word-day1 {
+  color: #515151;
+  font-size: 1.5rem;
+}
+
+.word-time {
+  color: #C7C7C7;
+  font-size: 1rem;
+}
+
+.word-day2 {
+  color: #A6A6A6;
+  font-size: 1.3rem;
+}
